@@ -44,7 +44,7 @@ To see a live example, follow these [instructions](/example/README.md).
 
 ```tsx
 import { CSSProperties, FunctionComponent } from 'react';
-import useScrollbarSize from 'react-scrollbar-size';
+import { useScrollbarSize } from 'react-scrollbar-size';
 
 const styles: CSSProperties = {
   margin: '1rem',
@@ -71,7 +71,7 @@ const ScrollbarSizeDemo: FunctionComponent = () => {
 ### JavaScript
 
 ```jsx
-import useScrollbarSize from 'react-scrollbar-size';
+import { useScrollbarSize } from 'react-scrollbar-size';
 
 const styles = {
   margin: '1rem',
