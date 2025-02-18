@@ -1,7 +1,7 @@
 import { act, render, screen } from '@testing-library/react';
 import type { FunctionComponent } from 'react';
 import { mockClientDimensions, mockOffsetDimensions } from '../../test/mockDimensions';
-import useScrollbarSize from '../useScrollbarSize';
+import { useScrollbarSize } from '../useScrollbarSize';
 
 const ScrollbarSizeExample: FunctionComponent = () => {
 	const { height, width } = useScrollbarSize();

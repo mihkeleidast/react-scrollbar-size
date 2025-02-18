@@ -8,7 +8,7 @@ export interface ScrollbarMeasurements {
 	width: number;
 }
 
-const useScrollbarSize = (): ScrollbarMeasurements => {
+export const useScrollbarSize = (): ScrollbarMeasurements => {
 	const [dimensions, setDimensions] = useState({ height: 0, width: 0 });
 	const element = useRef<HTMLDivElement | null>(null);
 
@@ -60,5 +60,3 @@ const useScrollbarSize = (): ScrollbarMeasurements => {
 
 	return dimensions;
 };
-
-export default useScrollbarSize;
