@@ -1,6 +1,5 @@
 {
-  "name": "react-scrollbar-size",
-  "private": true,
+  "name": "@mihkeleidast/react-scrollbar-size",
   "version": "5.0.0",
   "description": "React hook to calculate the size of browser scrollbars",
   "main": "index.js",
