@@ -87,5 +87,8 @@
     "react-dom": "18.2.0",
     "rimraf": "3.0.2",
     "typescript": "4.9.5"
+  },
+  "dependencies": {
+    "use-isomorphic-layout-effect": "^1.2.0"
   }
 }

@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
+import useIsomorphicLayoutEffect from 'use-isomorphic-layout-effect';
 import { debounce } from './utils';
 
 export interface ScrollbarMeasurements {
@@ -13,7 +14,7 @@ export const useScrollbarSize = (): ScrollbarMeasurements => {
 	const element = useRef<HTMLDivElement | null>(null);
 
 	// initialize resize event handler and state when mounted
-	useEffect(() => {
+	useIsomorphicLayoutEffect(() => {
 		const getElement = () => {
 			if (element.current == null) {
 				// element was not created yet -- initialize
